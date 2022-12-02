@@ -17,7 +17,7 @@ const AddDeliveryPerson = () => {
   };
 
   const saveUser = () => {
-    fetch("http://localhost:8080/api/user/deliveryperson/register", {
+    fetch("http://35.171.234.24:8080/api/user/deliveryperson/register", {
       method: "POST",
       headers: {
         Accept: "application/json",

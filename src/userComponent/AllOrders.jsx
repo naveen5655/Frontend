@@ -18,7 +18,7 @@ const AllOrders = () => {
 
   const retrieveAllOrder = async () => {
     const response = await axios.get(
-      "http://localhost:8080/api/user/admin/allorder"
+      "http://35.171.234.24:8080/api/user/admin/allorder"
     );
     console.log(response.data);
     return response.data;
@@ -73,7 +73,7 @@ const AllOrders = () => {
                       <td>
                         <img
                           src={
-                            "http://localhost:8080/api/product/" +
+                            "http://35.171.234.24:8080/api/product/" +
                             orderData.productImage
                           }
                           class="img-fluid"

@@ -21,7 +21,7 @@ const ContactUs = () => {
   }
   return (
     <div className="container mt-5">
-      <h2 className="mb-3">Fill the Form , We will respond via mail with in 24 Hours</h2>
+      <h2 className="mb-3">Fill the Form , We will respond via mail with in 24 Hours.</h2>
       <form onSubmit={onSubmit}>
         <div className="mb-3">
           <label className="form-label" htmlFor="name">

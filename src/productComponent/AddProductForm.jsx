@@ -5,7 +5,7 @@ const AddProductForm = () => {
   const [categories, setCategories] = useState([]);
 
   const retrieveAllCategories = async () => {
-    const response = await axios.get("http://localhost:8080/api/category/all");
+    const response = await axios.get("http://35.171.234.24:8080/api/category/all");
     return response.data;
   };
 
@@ -43,7 +43,7 @@ const AddProductForm = () => {
     formData.append("categoryId", product.categoryId);
 
     axios
-      .post("http://localhost:8080/api/product/add", formData)
+      .post("http://35.171.234.24:8080/api/product/add", formData)
       .then((resp) => {
         let result = resp.data.data;
         alert("Product saved successfully");

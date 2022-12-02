@@ -35,14 +35,14 @@ const HomePage = () => {
   }, [categoryId]);
 
   const retrieveAllProducts = async () => {
-    const response = await axios.get("http://localhost:8080/api/product/all");
+    const response = await axios.get("http://35.171.234.24:8080/api/product/all");
 
     return response.data;
   };
 
   const retrieveProductsByCategory = async () => {
     const response = await axios.get(
-      "http://localhost:8080/api/product/category?categoryId=" + categoryId
+      "http://35.171.234.24:8080/api/product/category?categoryId=" + categoryId
     );
 
     return response.data;

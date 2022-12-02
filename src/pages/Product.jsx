@@ -27,7 +27,7 @@ const Product = () => {
 
   const retrieveProduct = async () => {
     const response = await axios.get(
-      "http://localhost:8080/api/product/id?productId=" + productId
+      "http://35.171.234.24:8080/api/product/id?productId=" + productId
     );
 
     return response.data;
@@ -53,14 +53,14 @@ const Product = () => {
 
   const retrieveProductsByCategory = async () => {
     const response = await axios.get(
-      "http://localhost:8080/api/product/category?categoryId=" + categoryId
+      "http://35.171.234.24:8080/api/product/category?categoryId=" + categoryId
     );
     console.log(response.data);
     return response.data;
   };
 
   const saveProductToCart = (userId) => {
-    fetch("http://localhost:8080/api/user/cart/add", {
+    fetch("http://35.171.234.24:8080/api/user/cart/add", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -110,7 +110,7 @@ const Product = () => {
         <div class="col-sm-3 mt-2 admin">
           <div class="card form-card border-color custom-bg">
             <img
-              src={"http://localhost:8080/api/product/" + product.imageName}
+              src={"http://35.171.234.24:8080/api/product/" + product.imageName}
               style={{
                 maxHeight: "500px",
                 maxWidth: "100%",

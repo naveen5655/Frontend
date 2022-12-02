@@ -7,7 +7,7 @@ const ProductCard = (product) => {
     <div className="col">
     <div class="card border-color rounded-card card-hover product-card custom-bg h-100">
       <img
-        src={"http://localhost:8080/api/product/" + product.item.imageName}
+        src={"http://35.171.234.24:8080/api/product/" + product.item.imageName}
         class="card-img-top rounded mx-auto d-block m-2"
         alt="img"
         style={{

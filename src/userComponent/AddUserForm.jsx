@@ -21,7 +21,7 @@ const AddUserForm = () => {
 
   const saveUser = (event) => {
     event.preventDefault();
-    fetch("http://localhost:8080/api/user/register", {
+    fetch("http://35.171.234.24:8080/api/user/register", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -74,7 +74,6 @@ const AddUserForm = () => {
                   name="role"
                 >
                   <option value="0">Select Role</option>
-                  <option value="Admin"> Admin </option>
                   <option value="Customer"> Customer </option>
                   <option value="Delivery"> Delivery Person </option>
                 </select>

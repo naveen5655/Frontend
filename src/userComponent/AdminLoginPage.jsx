@@ -16,7 +16,7 @@ const AdminLoginPage = () => {
   };
 
   const loginAction = (e) => {
-    fetch("http://localhost:8080/api/user/admin/login", {
+    fetch("http://35.171.234.24:8080/api/user/admin/login", {
       method: "POST",
       headers: {
         Accept: "application/json",

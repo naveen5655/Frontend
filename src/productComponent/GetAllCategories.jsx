@@ -6,7 +6,7 @@ const GetAllCategories = () => {
   const [categories, setCategories] = useState([]);
 
   const retrieveAllCategories = async () => {
-    const response = await axios.get("http://localhost:8080/api/category/all");
+    const response = await axios.get("http://35.171.234.24:8080/api/category/all");
     return response.data;
   };
 
